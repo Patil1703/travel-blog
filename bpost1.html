@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 1 - My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Beaches</h1>
+    </header>
+    <nav class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item dropdown">
+                <a href="#" class="dropbtn">Categories</a>
+                <ul class="dropdown-content">
+                    <li><a href="mountains.html">Mountains</a></li>
+                    <li><a href="beaces.html">Beaches</a></li>
+                    <li><a href="cities.html">Cities</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+            <input type="text" id="searchInput" placeholder="Search for posts...">
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h2>Discovering Goa</h2>
+            <blockquote>
+                <h3>Introduction</h3>
+                    <p>Goa, a tropical paradise on India’s west coast, is renowned for its stunning beaches, vibrant 
+                        nightlife, and rich cultural heritage. Whether you're seeking relaxation or adventure, Goa offers 
+                        something for everyone. Let’s dive into the best experiences this ultimate beach destination has 
+                        to offer!</p>
+                    
+                    <h3>Best Beaches to Explore</h3>
+                    <h4>Baga beach</h4>
+                        <p>Baga Beach is famous for its lively atmosphere, making it the perfect spot for party lovers. 
+                            Here, you can indulge in thrilling water sports, relax on the sun-kissed sands, or enjoy a 
+                            refreshing drink at one of the many beach shacks. The beach is known for its vibrant 
+                            nightlife, with numerous clubs and bars lighting up the evenings.</p>
+                            <img src="baga.jpeg" alt="Baga Beach" width="100%">
+                    
+                    <h4>Anjuna beach</h4>
+                        <p>Anjuna Beach is a haven for free spirits and those seeking a bohemian vibe. Known for its 
+                            iconic flea market and trance parties, this beach is a blend of scenic beauty and cultural 
+                            richness. Don’t forget to explore the nearby rocky shores and enjoy the stunning sunset views.</p>
+                    
+                    <h4>Palolem BEach</h4>
+                        <p>For a more tranquil experience, head to Palolem Beach. This crescent-shaped paradise is 
+                            perfect for swimming and relaxation. Kayaking in the calm waters or joining a yoga retreat 
+                            will rejuvenate your soul amidst the serene surroundings.</p>
+                            <img src="candolim.jpg" alt="Palolem Beach" width="100%">
+                    <h4>Calangute beach</h4>
+                        <p>Calangute Beach is the largest and most popular beach in Goa, attracting tourists. Calangute
+                            Beach, known as the "Queen of Beaches," is a vibrant hub in Goa, perfect for sunbathing and 
+                            water sports. With its lively shacks and bustling atmosphere, it’s an ideal spot for both 
+                            relaxation and adventure.</p>
+                    
+                    <h3>Must-Do activities</h3>
+                    <h4>Water Sports</h4>
+                        <p>Goa is a water sports enthusiast's dream! From parasailing and jet-skiing to banana boat 
+                            rides, there’s no shortage of adrenaline-pumping activities. Baga and Calangute beaches 
+                            are the best spots to experience the thrill.</p>
+                            <img src="goa-water-sports.jpg" alt="water sports" width="100%">
+                    
+                    <h4>Beach Parties</h4>
+                        <p>Goa’s nightlife is legendary. Join the vibrant beach parties at venues like Tito's and Café 
+                            Mambo, where you can dance the night away to the latest beats, surrounded by a lively crowd 
+                            and an electrifying atmosphere.</p>
+                            <img src="shiva-valley-in-north-goa.png" alt="Beach parties" width="100%">
+                    
+                    <h4>Cultural tours</h4>
+                        <p>Take a break from the beaches and explore Goa's rich heritage. Visit the historic forts, such 
+                            as Aguada and Chapora, and the beautiful churches, including the Basilica of Bom Jesus and Se 
+                            Cathedral, to immerse yourself in the local culture.</p>
+                    
+                    <h3>Culinary Delights</h3>
+                    
+                    <h4>Beach Shacks</h4>
+                        <p>No trip to Goa is complete without savoring its delectable seafood. Visit beach shacks like 
+                            Britto's and Suwadik Goan Kitchen to enjoy fresh fish curry, prawn balchão, and the famous 
+                            Goan vindaloo while soaking in the beach vibes.</p>
+                    
+                    <h4>Night Markets</h4>
+                        <p>Don’t miss the vibrant night markets, such as the Anjuna Flea Market and Saturday Night Market 
+                            in Arpora. Here, you can taste local street food, shop for handicrafts, and enjoy live music 
+                            performances under the stars.</p>
+                            <img src="night market.jpeg" alt="Night Market" width="100%">
+                    
+                    <h4>Goan Cuisine</h4>
+                    <p>Goan cuisine is a unique blend of Portuguese and Indian flavors. It is a delightful fusion of 
+                        flavors, featuring fresh seafood, coconut, and aromatic spices. Signature dishes like fish curry,
+                        vindaloo, and bebinca showcase the region's rich culinary heritage.</p>
+
+                    <h3>Conclusion</h3>
+                        <p>Goa is not just a destination; it’s an experience that stays with you long after you leave. 
+                            With its stunning beaches, rich culture, and vibrant nightlife, Goa truly deserves its title 
+                            as the ultimate beach destination. Whether you’re a thrill-seeker or looking for a peaceful 
+                            retreat, Goa has it all. Pack your bags and get ready to create unforgettable memories in 
+                            this coastal paradise!</p>
+            </blockquote>
+        </article>
+        <section id="comments-section">
+            <h3>Comments</h3>
+            <form id="commentForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="commentsList"></div>
+        </section>
+    </main>
+    <!--<footer>
+        <p>&copy; 2024 My Blog</p>
+    </footer>-->
+    <script src="script.js"></script>
+
+</body>
+</html>

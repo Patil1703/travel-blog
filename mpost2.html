@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 1 - My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mountains</h1>
+    </header>
+    <nav class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item dropdown">
+                <a href="#" class="dropbtn">Categories</a>
+                <ul class="dropdown-content">
+                    <li><a href="mountains.html">Mountains</a></li>
+                    <li><a href="beaces.html">Beaches</a></li>
+                    <li><a href="cities.html">Cities</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+            <input type="text" id="searchInput" placeholder="Search for posts...">
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h2>Uttarakhand</h2>
+            <blockquote>
+            <p>Kumaon is a hilly region of the northern Indian state of Uttarakhand. The name Kumaon 
+                conjures up vivid images of tranquil hill stations, mountain lakes, towering Himalayan 
+                peaks, and thick forests that are the preserve of the majestic Bengal tiger.</p>
+            <p>Kumaon is much loved for providing many pristine trekking, hiking, rafting, and 
+                boating opportunities. The best times to visit are either before or after the 
+                monsoon, when the weather is at its best and provides heavenly conditions to enjoy 
+                such outdoor activities.</p>
+                <img src="uttarkhand.cms" alt="uttarkhand" width="100%"> 
+            <p>The peaceful hill stations of Ranikhet, Almora, and Nainital are tiny jewels studded 
+                in Kumaon’s crown. Nainital is the largest town in Kumaon and was developed by the 
+                British into their summer playground. With scenes reminiscent of the English Lake District,
+                 boating clubs and charming villas set around Naini Lake abound here. Other gifts of the 
+                 Kumaoni landscape are hikes that culminate in spectacular scenery and nature walks in 
+                 forests of oak, pine, and deodar. Peaches, apricots, apples, and plums are some examples 
+                 of the bounty accorded to the region.</p>
+            <p>The Kumaon Himalayan range towers above the hill stations. These constitute some of the highest 
+                peaks of the Himalayas, with multiple peaks exceeding 5,500 metres in altitude. Most majestic 
+                of these peaks is Nanda Devi with its distinctive two-peaked massif, encircled by 12 other 
+                lofty peaks.</p>
+                <img src="uttarkhand1.avif" alt="uttarkhand" width="100%"> 
+            <p>For adventurous travellers, the fairly accessible Pindari Glacier Trek allows passage through 
+                virgin countryside on the edge of Nanda Devi National Park, although the Milam Glacier Trek 
+                to the east of Nanda Devi is reputed to be more of challenge.</p>
+            <p>Lastly, we come to one of the most famous attributes of Kumaon. The mystique and thrill of the 
+                region were popularized through the incredible writing of Jim Corbett, particularly his 
+                bestselling book Man Eaters of Kumaon. Jim Corbett National Park, named after the great 
+                man himself, was the original site of Project Tiger, a conservation project aimed at reviving 
+                dwindling tiger numbers. Although the first part of Jim Corbett’s career targeted the killing 
+                of tigers that had an appetite for human subjects, the latter part of his career was centred 
+                around tiger conservation efforts. </p>
+            <p>When you visit Kumaon, revel in the keen sense of adventure of a tiger trail. Alternatively, 
+                trek to dizzying heights to drink in some of the most spectacular stretches of mountain scenery 
+                in the world. Either way, you most certainly won’t be disappointed. Here are the Top 10 reasons 
+                to visit the Himalayas.</p>
+            </blockquote>
+        </article>
+        <section id="comments-section">
+            <h3>Comments</h3>
+            <form id="commentForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="commentsList"></div>
+        </section>
+    </main>
+    <!--<footer>
+        <p>&copy; 2024 My Blog</p>
+    </footer>-->
+    <script src="script.js"></script>
+
+</body>
+</html>

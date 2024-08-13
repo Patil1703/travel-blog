@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sand On My Toes</h1>
+    </header>
+    <nav class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item dropdown">
+                <a href="#" class="dropbtn">Categories</a>
+                <ul class="dropdown-content">
+                    <li><a href="mountains.html">Mountains</a></li>
+                    <li><a href="beaces.html">Beaches</a></li>
+                    <li><a href="cities.html">Cities</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+            <input type="text" id="searchInput" placeholder="Search for posts...">
+        </ul>
+    </nav>
+    
+    <main class="container">
+        <section class="contact-section">
+            <h1>Contact Us</h1>
+            <p>If you have any questions, feel free to reach out to us!</p>
+            <form class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <!--<footer>
+        <p>&copy; 2024 My Blog</p>
+    </footer>-->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,396 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dbd8d8;
+}
+h1{
+    font-size: 45px;
+    font-family: 'Merriweather', Georgia, serif;
+}
+h2{
+    text-align: left;
+    padding: 10px;
+    font-size: 38px;
+    font-family: 'Merriweather', Georgia, serif;
+}
+h3{
+    font-size: 30px;
+    font-family: 'Merriweather', Georgia, serif;
+
+}
+p{
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header {
+    background: #87bdd8;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    color: #361111;
+    padding: 50px;
+    text-align: center;
+    
+}
+
+.navbar {
+    background-color: #6e4747;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+}
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    color: white;
+    padding: 14px 20px;
+    cursor: pointer;
+}
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    position: relative;
+    
+}
+
+.nav-item a, .dropbtn {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 7px 20px;
+    text-decoration: none;
+    
+}
+.dropdown{
+    list-style-type: none;
+}
+.nav-item a:hover, .dropdown:hover .dropbtn {
+    background-color: #c99592;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #c99592;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%; 
+    left: 0;   
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    
+}
+
+.dropdown-content a:hover {
+    background-color: #a55555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+#searchInput {
+
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    display: inline-flex;
+    position: flex;
+    height: 10px;
+    align-items: center;
+    margin-right: 100%;
+}
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        display: none;
+    }
+    
+    .nav-item a {
+        text-align: left;
+        padding: 10px 20px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+    #searchInput{
+        display: flex;
+        min-width: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dropdown-content {
+        position: static;
+        display: none;
+    }
+
+    .dropdown-content a {
+        padding: 10px 20px;
+        
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+}
+
+main {
+    padding: 30px;
+    visibility: visible;
+    z-index: 1000;
+}
+
+article {
+    background: #fff;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+#commentsList {
+    margin-top: 20px;
+}
+
+.comment {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.comment h4 {
+    margin: 0 0 5px;
+}
+
+.comment p {
+    margin: 0;
+}
+
+.comment button {
+    margin-top: 10px;;
+    padding: 5px 10px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+
+.comment button.edit {
+    background-color: #4caf50;
+    
+     
+}
+
+.comment button.delete {
+    background-color: #ff4c4c; 
+}
+
+
+.comment button:hover {
+    opacity: 0.8;
+}
+
+
+.comment .actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    
+    .comment {
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .comment button {
+        margin-top: 5px;
+        padding: 5px;
+    }
+
+    .comment .actions {
+        flex-direction: column;
+    }
+
+    footer {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .comment {
+        padding: 5px;
+    }
+
+    .comment button {
+        padding: 5px;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .comment .actions {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    footer {
+        position: static;
+    }
+}
+
+
+
+#postsList {
+    margin-top: 20px;
+}
+
+.post {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+.about h2, .about h3 {
+    color: #333;
+}
+
+.team-member {
+    margin-bottom: 20px;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.contact-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4593a1;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px #333,-5px -5px 10px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #136a6d;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hover state */
+a:hover {
+    
+    text-decoration: underline;
+}

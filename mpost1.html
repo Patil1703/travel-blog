@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 1 - My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mountains</h1>
+    </header>
+    <nav class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item dropdown">
+                <a href="#" class="dropbtn">Categories</a>
+                <ul class="dropdown-content">
+                    <li><a href="mountains.html">Mountains</a></li>
+                    <li><a href="beaces.html">Beaches</a></li>
+                    <li><a href="cities.html">Cities</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+            <input type="text" id="searchInput" placeholder="Search for posts...">
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h2>Darjeeling</h2>
+            <blockquote>
+            <p>The picturesque hill station of Darjeeling is a place that captures the most vivid imagination. 
+                Darjeeling is known as the ‘Queen of the Hills’ and rightly so as it is framed by the mighty 
+                Himalayas and resplendent with carpets of tea. </p>
+            
+            <p>Located in West Bengal, at an average altitude of 7,000 feet above sea level, Darjeeling has centuries 
+                of colonial history that adds to its nostalgic charm. It was originally established in 1839 by a 
+                British official called Dr. Campbell, and became home to generations of British tea planters.</p>
+            
+            <p>The backdrop to this hill-top town is the mighty, snow-capped Himalayan mountains. Mount Kanchenjunga 
+                features most prominently amongst them and it’s soaring peaks can be viewed on a clear day from nearby 
+                Tiger Hill. Lofty conifers, Himalayan cherry trees, weeping willows and many indigenous Himalayan 
+                plants and shrubs that can be found only at the highest climes lend to Darjeeling’s innate appeal.</p>
+                <img src="darjeeling.jpeg" alt="darjeeling" width="100%"> 
+
+            <p>Spring is a wonderful time to visit Darjeeling. During this time, the whole town and its surroundings 
+                burst into a riot of spring flowers. Especially attractive are multi-hued rhododendron, magnolia, 
+                cornflowers, dahlias, hydrangeas, tiger lilies and so much more.</p>
+            
+            <p>You may approach Darjeeling by the numerous hair pin bends of the steep and steady winding motor road. 
+                A more leisurely approach is via the quaint little toy train, awarded UNESCO World Heritage status 
+                and considered in itself, an incredible feat of engineering progress for its time. </p>
+
+            <p>Darjeeling town is an interesting mix of old and new. Here, newly constructed hotels perched 
+                precariously along hillsides and small souvenir shops jostle for space along with the much older  
+                red roofed buildings, churches, temples and centuries old monasteries, like the brightly resplendent 
+                Ghoom Monastery.</p>
+                <img src="darjeeling1.jpeg" alt="darjeeling" width="100%"> 
+
+            <p>Visiting places like the Darjeeling Zoo, are wonderful ways to make the most of your Darjeeling trip 
+                especially if visiting with children. The Batasia War Memorial, The Lloyd Botanical Garden, The Rock 
+                Garden and a number of scenic picnic spots in and about town are all wonderful places to visit and 
+                make memories.</p>
+
+            <p>When in Darjeeling you simply must treat yourself to a cup of the world famous, fragrant 
+                Darjeeling tea. Take your pick of the light and fragrant first flush or the more robust, muscatel 
+                notes of the second flush tea. Either way, you will be rewarded with a memorable brew grown, sourced 
+                and made in Darjeeling. Some of the cozy bakeries about town will be sure to serve you a warming cup, 
+                perfectly complemented with a baked confection. For a more hands on experience of the tea growing 
+                process, you might consider visiting one of Darjeeling’s exclusive tea gardens.</p>
+                
+            <p>The British ran to the high altitudes of Darjeeling to escape the cruel summer heat of the plains. 
+                Nowadays, Darjeeling is still a place to drink in the crisp mountain air, saunter along the wide 
+                promenades in town, and take in the unsurpassed beauty of mountain scenery. There are many people 
+                who consider visiting Darjeeling akin to an annual pilgrimage. A mountain pilgrimage guaranteed to 
+                rejuvenate and exhilarate the senses.</p>
+        </blockquote>
+        </article>
+        <section id="comments-section">
+            <h3>Comments</h3>
+            <form id="commentForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="commentsList"></div>
+        </section>
+    </main>
+    <!--<footer>
+        <p>&copy; 2024 My Blog</p>
+    </footer>-->
+    <script src="script.js"></script>
+
+</body>
+</html>

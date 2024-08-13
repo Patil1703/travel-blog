@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 1 - My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Beaches</h1>
+    </header>
+    <nav class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item dropdown">
+                <a href="#" class="dropbtn">Categories</a>
+                <ul class="dropdown-content">
+                    <li><a href="mountains.html">Mountains</a></li>
+                    <li><a href="beaces.html">Beaches</a></li>
+                    <li><a href="cities.html">Cities</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+            <input type="text" id="searchInput" placeholder="Search for posts...">
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h2>Andaman and Nicobar Islands: The Pristine Paradise</h2>
+            <blockquote>
+                <h3>Introduction</h3>
+                    <p>The Andaman and Nicobar Islands, a stunning archipelago in the Bay of Bengal, are a tropical 
+                        paradise known for their crystal-clear waters, lush greenery, and breathtaking beaches. This 
+                        untouched haven offers a perfect escape for nature lovers and adventure seekers alike. Let’s 
+                        explore the highlights of this pristine paradise!</p>
+                    
+                <h3>Best Beaches to Explore</h3>
+                    <h4>Radhanagar Beach (Havelock Island)</h4>
+                        <p>Radhanagar Beach, consistently ranked among the best beaches in Asia, boasts powdery white 
+                            sand and turquoise waters. It’s an ideal spot for swimming, sunbathing, and enjoying 
+                            mesmerizing sunsets. The tranquil atmosphere makes it perfect for a day of relaxation.</p>
+                    
+                    <h4>Elephant Beach (Havelock Island)</h4>
+                        <p>Famous for its vibrant coral reefs, Elephant Beach is a snorkeling paradise. Visitors can 
+                            explore the underwater world teeming with marine life and enjoy thrilling water sports like 
+                            kayaking and banana boat rides in the calm waters.</p>
+                            <img src="elephant-beach.jpg" alt="Elephant Beach" width="100%">
+                    
+                    <h4>Laxmanpur Beach (Neil Island)</h4>
+                        <p>Laxmanpur Beach is known for its stunning natural beauty and picturesque sunsets. The beach 
+                            is perfect for peaceful strolls and offers unique rock formations that are perfect for 
+                            photography enthusiasts.</p>
+                    
+                <h3>Must-Do activities</h3>
+                    <h4>Scuba Diving</h4>
+                        <p>Dive into the azure waters and explore the rich marine biodiversity that the Andaman Islands 
+                            have to offer. With numerous diving spots, including North Reef and Barracuda City, both 
+                            beginners and experienced divers can enjoy breathtaking underwater adventures.</p>
+                            <img src="Scuba-Diving-in-Andaman.avif" alt="Scuba diving" width="100%">
+                    
+                    <h4>Snorkeling</h4>
+                        <p>For those looking for a more accessible underwater experience, snorkeling at beaches like 
+                            Elephant Beach and Havelock offers an unforgettable chance to witness vibrant coral reefs 
+                            and colorful fish up close.</p>
+                    
+                    <h4>Trekking
+                    </h4>
+                        <p>Embark on a trek to Madhuban, where you can immerse yourself in the lush greenery and spot 
+                            exotic wildlife. The trek offers breathtaking views and a chance to experience the islands' 
+                            natural beauty up close.</p>
+                    
+                <h3>Cultural Experiences</h3>
+                    
+                    <h4>Visit Cellular Jail</h4>
+                        <p>A visit to the historic Cellular Jail in Port Blair is essential to understanding the islands' 
+                            colonial history. This former prison, now a national memorial, offers insight into India's 
+                            struggle for independence through its poignant stories and light-and-sound show.</p>
+                    
+                    <h4>Explore Local Villages</h4>
+                        <p>Experience the rich culture of the islands by visiting local villages. Engage with the 
+                            friendly locals, learn about their traditional lifestyles, and savor authentic island cuisine 
+                            that reflects the unique heritage of the Andamanese people.</p>
+                    
+                <h3>Culinary Delights</h3>
+                    <h4>Fresh Seafood</h4>
+                        <p>Andaman cuisine is famous for its fresh seafood, and trying local dishes is a must. Enjoy 
+                            delicacies like fish tikka, crab curry, and prawn biryani at popular eateries such as Anju 
+                            Coco Resto and Bonova Cafe and Pub.</p>
+                    <h4>Tropical fruits</h4>
+                        <p>The islands are home to a variety of tropical fruits, including mangoes, pineapple,bananas 
+                            and mangoes. Don’t miss out on the chance to taste these delicious treats while relaxing on 
+                            the beach or exploring the local markets.</p>
+                <h3>Conclusion</h3>
+                        <p>The Andaman and Nicobar Islands are truly a pristine paradise that captivates every traveler 
+                            with their unparalleled beauty and serenity. Whether you’re diving into vibrant coral reefs, 
+                            lounging on serene beaches, or exploring rich cultural heritage, this archipelago promises 
+                            unforgettable experiences. Pack your bags and set off on an adventure to discover the magical 
+                            charm of the Andaman Islands!</p>
+            </blockquote>
+        </article>
+        <section id="comments-section">
+            <h3>Comments</h3>
+            <form id="commentForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="commentsList"></div>
+        </section>
+    </main>
+    <!--<footer>
+        <p>&copy; 2024 My Blog</p>
+    </footer>-->
+    <script src="script.js"></script>
+
+</body>
+</html>

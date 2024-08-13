@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 1 - My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cities</h1>
+    </header>
+    <nav class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item dropdown">
+                <a href="#" class="dropbtn">Categories</a>
+                <ul class="dropdown-content">
+                    <li><a href="mountains.html">Mountains</a></li>
+                    <li><a href="beaces.html">Beaches</a></li>
+                    <li><a href="cities.html">Cities</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+            <input type="text" id="searchInput" placeholder="Search for posts...">
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h2>Discovering the Heart of India: Delhi</h2>
+            <blockquote>
+                <h3>Introduction</h3>
+                    <p>Delhi, the capital city of India, is a captivating blend of history, culture, and modernity. 
+                        From ancient monuments to bustling bazaars, and from serene gardens to vibrant street food,
+                        Delhi offers a diverse range of experiences. Join me as we embark on a journey through the 
+                        heart of India, exploring the city's rich heritage and vibrant culture.</p>
+                    
+                    <h3>Day 1: Historical Marvels</h3>
+                    <h4>Red Fort</h4>
+                        <p>Start your Delhi adventure at the iconic Red Fort, a UNESCO World Heritage Site. Built 
+                            by the Mughal Emperor Shah Jahan, this grand fort stands as a testament to India's rich 
+                            history. Don't miss the evening sound and light show that brings the fort's history to 
+                            life.</p>
+                            <img src="red-fort.webp" alt="red fort" width="100%">                    
+                    <h4>Jama Masjid</h4>
+                        <p>Just a short walk from the Red Fort is Jama Masjid, one of the largest mosques in India. 
+                            Climb the minaret for a stunning panoramic view of Old Delhi. The mosque's impressive 
+                            architecture and serene ambiance make it a must-visit.</p>
+                    
+                    <h4>Lunch at Karim's</h4>
+                        <p>For a taste of authentic Mughlai cuisine, head to Karim's, located near Jama Masjid.
+                            Established in 1913, this legendary eatery is famous for its kebabs, biryanis, and 
+                            mouth-watering curries.</p>
+                    
+                    <h3>Day 2: Cultural and spiritual insights</h3>
+                    <h4>Qutub Minar</h4>
+                        <p>Begin your day with a visit to Qutub Minar, another UNESCO World Heritage Site. This 
+                            towering minaret, built in the 12th century, is surrounded by intricate carvings and 
+                            historical ruins, including the Iron Pillar of Delhi.</p>
+                    
+                    <h4>Lotus Temple</h4>
+                        <p>Next, head to the Lotus Temple, a stunning Bahá'í House of Worship. Shaped like a lotus 
+                            flower, this architectural marvel offers a peaceful environment for meditation and 
+                            reflection, regardless of your faith.</p>
+                            <img src="lotus temple.jpeg" alt="lotus temple" width="100%"> 
+                    
+                    <h4>Lunch at Saravana Bhavan</h4>
+                        <p>For a delightful South Indian meal, visit Saravana Bhavan in Connaught Place. Enjoy a 
+                            variety of dosas, idlis, and other traditional dishes in this popular vegetarian 
+                            restaurant..</p>
+                    
+                    <h3>Day 3: Exploring New Delhi</h3>
+                    
+                    <h4>India Gate</h4>
+                        <p>Start your day at India Gate, a war memorial dedicated to Indian soldiers. The surrounding
+                            lawns are perfect for a morning stroll. Visit the nearby National War Memorial for more 
+                            insights into India's military history.</p>
+                    
+                    <h4>Humayan's Tomb</h4>
+                        <p>Next, visit Humayun's Tomb, a UNESCO World Heritage Site and a precursor to the Taj 
+                            Mahal. The beautiful gardens and intricate Mughal architecture make it a serene spot 
+                            for photography and relaxation.</p>
+                    
+                    <h4>Lunch at Khan Market</h4>
+                        <p>Head to Khan Market for lunch, an upscale shopping area with numerous cafes and 
+                            restaurants. Perch Wine & Coffee Bar is a great choice for a relaxing meal.</p>
+                    
+                    <h3>Day 4: Modern Delhi and Shopping</h3>
+                    
+                    <h4>Akshardham Temple</h4>
+                        <p>Begin your day with a visit to the stunning Akshardham Temple. This modern architectural 
+                            wonder showcases traditional Indian art, culture, and spirituality through its intricate
+                            carvings, exhibitions, and the mesmerizing musical fountain show.</p>
+                    
+                    <h4>Shopping at Dilli haat</h4>
+                        <p>Spend your afternoon at Dilli Haat, an open-air market that offers a variety of 
+                            handicrafts, textiles, and cuisines from different states of India. It's a perfect 
+                            place to buy souvenirs and experience the diversity of Indian culture.</p>
+                    
+                    <h4>Dinner at Indian Accent</h4>
+                        <p>Conclude your Delhi journey with a memorable dinner at Indian Accent, one of the city's 
+                            finest restaurants. Located in The Lodhi hotel, Indian Accent offers innovative Indian 
+                            cuisine that blends traditional flavors with contemporary techniques.</p>
+                    
+                    <h3>Conclusion</h3>
+                        <p>Delhi is a city that seamlessly blends the old with the new, offering a unique travel 
+                            experience filled with historical landmarks, cultural treasures, and modern attractions.
+                            Whether you're exploring ancient forts, indulging in delicious street food, or shopping 
+                            in vibrant markets, Delhi promises an unforgettable journey through time and culture. 
+                            Happy travels!</p>
+            </blockquote>
+        </article>
+        <section id="comments-section">
+            <h3>Comments</h3>
+            <form id="commentForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="commentsList"></div>
+        </section>
+    </main>
+    <!--<footer>
+        <p>&copy; 2024 My Blog</p>
+    </footer>-->
+    <script src="script.js"></script>
+
+</body>
+</html>

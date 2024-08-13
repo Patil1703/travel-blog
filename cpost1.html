@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 1 - My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cities</h1>
+    </header>
+    <nav class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item dropdown">
+                <a href="#" class="dropbtn">Categories</a>
+                <ul class="dropdown-content">
+                    <li><a href="mountains.html">Mountains</a></li>
+                    <li><a href="beaces.html">Beaches</a></li>
+                    <li><a href="cities.html">Cities</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+            <input type="text" id="searchInput" placeholder="Search for posts...">
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h2>Jaipur</h2>
+            <blockquote>
+                <p>Jaipur has arid and hot weather which prevails from the month of March to May which is referred to 
+                    as the summer season. During the month of December till February, the temperatures are very low and 
+                    are referred to as the winter season. Whereas the month of October and November are transit months 
+                    between the winter and the monsoon. Thus the best time to visit Jaipur is during the months of 
+                    November to January. The remarkable tourist spots in Jaipur are Amber Fort and Palace, Hawa Mahal, 
+                    Sisodia Rani Garden, Jaigarh Fort, Jantar Mantar Observatory, Abhaneri stepwell, and Rambagh Palace
+                    to name a few. The Jaipur Tourism Industry has contributed largely towards the development of the 
+                    city.  In addition, a large number of foreign exchange is earned by the tourism industry owing to 
+                    the visit of international tourists. The government and the city municipality have restored the 
+                    national heritage to captivate more and more tourists.</p>
+                    <img src="jaipur.jpg" alt="Jaipur" width="100%">
+
+                <p>Jaipur is also one of the most significant economically vibrant cities. The key strengths of 
+                    the country are local handicraft industries, the trade and commerce industry and the tourism 
+                    industry. Thus they are regarded as the assets of the economic profile of the city. The 
+                    industrial sector is also one of the most important sectors of the city. To encourage the 
+                    industrial development of the city, the government has taken initiatives to develop the 
+                    industrial areas of Jhotwara, Vishwakarma, Hirawala Ext and Kolana.</p>
+                
+                <p>Jaipur is famous all over the world for its remarkable arts and crafts. The city offers exquisite 
+                    jewellery, lacquer items, puppets and quilts. Moreover, Jaipur is also famous for its folk dance 
+                    and music. The traditional dance form of the city is Ghoomar or Ghumar and the Mand Folk Music 
+                    is the most popular form of folk music that has gained success from the people. The local 
+                    language of Jaipur is Dhundhadi, whereas some people speak English and Hindi as well. The 
+                    majority of the people belong to the Sanatan Dharma or Hinduism. People together celebrate 
+                    festivals such as Makar Sankranti, Diwali, Dusshera, Ganesh Chaturthi and others. Regards food, 
+                    the cuisine of Jaipur marks the royalty of the city. Across the world, the Rajasthani thalis 
+                    are very famous comprising of Mawa Kachori, dal Bati churma, Besan ka Gatta, bazre ki roti to
+                    name a few.</p>
+            </blockquote>
+        </article>
+        <section id="comments-section">
+            <h3>Comments</h3>
+            <form id="commentForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="commentsList"></div>
+        </section>
+    </main>
+    <!--<footer>
+        <p>&copy; 2024 My Blog</p>
+    </footer>-->
+    <script src="script.js"></script>
+
+</body>
+</html>

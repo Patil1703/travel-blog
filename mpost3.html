@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 1 - My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mountains</h1>
+    </header>
+    <nav class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item dropdown">
+                <a href="#" class="dropbtn">Categories</a>
+                <ul class="dropdown-content">
+                    <li><a href="mountains.html">Mountains</a></li>
+                    <li><a href="beaces.html">Beaches</a></li>
+                    <li><a href="cities.html">Cities</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+            <input type="text" id="searchInput" placeholder="Search for posts...">
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h2>Shillong</h2>
+            <blockquote>
+                <p>Shillong is known as the Scotland of the East, a dreamy hill station in Meghalaya, and a lesser 
+                    known gem of India’s wild and unspoilt Northeast region. Meghalaya literally translates to the 
+                    abode of clouds. Morning mists, scented pine forests, and rushing waterfalls add to the romantic 
+                    appeal of this green, picturesque location.</p>
+
+                <p>Shillong is situated at the centre of an elevated plateau in the midst of the rolling Khasi 
+                    Hills, at an average altitude of 1500 metres. Nowadays, Shillong town has a typical urban 
+                    sprawl that comes hand in hand with new development. However, certain pockets of the city exude 
+                    the nostalgic charm of old Catholic Churches, bungalows from the Victorian era and rambling 
+                    golf courses. </p>
+                
+                <p>Shillong enjoys a temperate climate — quite different from the rest of tropical India. Summer 
+                    temperatures are never extreme.  The rainy season, extending from June to September, is prone 
+                    to rain and drizzle. But if you are willing to embrace the monsoon magic, Shillong in the mists 
+                    has a beauty all its own.</p>
+                    <img src="shillong.jpg" alt="Shillong" width="100%"> 
+                <p>There are many places of scenic beauty scattered in and around town. Crystal clear lakes, 
+                    cascading waterfalls, and opportunities for kayaking and caving will add to the thrill factor 
+                    of a trip to Shillong. Head to Umiam Lake, 17 kilometres out of town, to experience a serene, 
+                    tranquil atmosphere with boating and picnicking opportunities. Shillong Peak provides a good 
+                    vantage point to take in the beautiful views of town and the surrounding hilly terrain. Elephant 
+                    Falls, Sweet Falls, and Spread Eagle Falls are a treat to behold and their cascading waters 
+                    provide good photo opportunities. </p>
+                
+                <p>The people of Shillong are very warm and welcoming. They embrace a more westernised culture 
+                    and outlook, which may in part have been influenced by local missionary activities in the 
+                    region. The local Khasi, Jaintia, and Garo people have long inhabited the Shillong region 
+                    and interestingly have their own matrilineal society, native food, and culture. </p>
+                
+                <p>To visit Shillong, is to escape into an alternative reality in India — reality that will often 
+                    catch you by surprise and remind you of the West. However, dig deep below the surface of the 
+                    local culture and you will discover customs, food, and a way of life that are unique and 
+                    delightful.
+            </blockquote>
+        </article>
+        <section id="comments-section">
+            <h3>Comments</h3>
+            <form id="commentForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="commentsList"></div>
+        </section>
+    </main>
+    <!--<footer>
+        <p>&copy; 2024 My Blog</p>
+    </footer>-->
+    <script src="script.js"></script>
+
+</body>
+</html>

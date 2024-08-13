@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 1 - My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Beaches</h1>
+    </header>
+    <nav class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item dropdown">
+                <a href="#" class="dropbtn">Categories</a>
+                <ul class="dropdown-content">
+                    <li><a href="mountains.html">Mountains</a></li>
+                    <li><a href="beaces.html">Beaches</a></li>
+                    <li><a href="cities.html">Cities</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+            <input type="text" id="searchInput" placeholder="Search for posts...">
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h2>Kerala Beaches: The Tranquil Paradise</h2>
+            <blockquote>
+                <h3>Introduction</h3>
+                    <p>Kerala, often referred to as "God's Own Country," is not just famous for its lush landscapes and 
+                        backwaters but also boasts some of India’s most stunning beaches. With golden sands, swaying 
+                        palm trees, and serene waters, Kerala’s beaches offer a perfect escape for relaxation and 
+                        adventure. Let’s explore the best beaches that this beautiful state has to offer!</p>
+                    
+                <h3>Best Beaches to Explore</h3>
+                    <h4>Kovalam Beach</h4>
+                        <p>Kovalam Beach is the crown jewel of Kerala's coastline. Known for its crescent-shaped 
+                            shoreline, this beach is a haven for sunbathers and surfers alike. With its vibrant beach 
+                            shacks, Ayurvedic centers, and stunning lighthouse views, Kovalam offers a perfect blend of 
+                            leisure and culture.</p>
+                    
+                    <h4>Varkala Beach</h4>
+                        <p>Varkala Beach is famous for its dramatic cliffs that rise majestically above the Arabian Sea. 
+                            This lesser-known gem is perfect for those seeking tranquility and spiritual retreats. Enjoy 
+                            breathtaking sunsets, explore the mineral springs, or indulge in yoga sessions along the 
+                            shore.</p>
+                            <img src="varkala-beach.jpg" alt="varkala beach" width="100%">
+                    
+                    <h4>Marari Beach</h4>
+                        <p>Marari Beach, a tranquil escape from the tourist crowds, is ideal for those looking to 
+                            experience authentic village life. With its serene atmosphere, soft sands, and picturesque 
+                            landscapes, Marari invites visitors to unwind and enjoy nature at its finest.</p>
+                    
+                <h3>Must-Do activities</h3>
+                    <h4>Ayurvedic Treatments</h4>
+                        <p>Kerala is renowned for its traditional Ayurvedic therapies. Many beach resorts and wellness 
+                            centers offer rejuvenating treatments right by the shore. Treat yourself to a relaxing 
+                            massage or holistic therapy while listening to the soothing sound of the waves.</p>
+                    
+                    <h4>Water Sports</h4>
+                        <p>For the adventure enthusiasts, Kerala's beaches offer a variety of water sports activities. 
+                            From parasailing and jet skiing at Kovalam to surfing at Varkala, there are plenty of 
+                            options to get your adrenaline pumping.</p>
+                    
+                    <h4>Beach Walks
+                    </h4>
+                        <p>Take leisurely strolls along the picturesque coastlines of Varkala and Marari Beach. The 
+                            serene environment and stunning views create the perfect backdrop for peaceful walks, 
+                            especially during sunrise or sunset.</p>
+                    
+                <h3>Cultural Experiences</h3>
+                    
+                    <h4>Visit Local Fishing Villages</h4>
+                        <p>Immerse yourself in the local culture by visiting nearby fishing villages. Engage with the 
+                            friendly fishermen, learn about their traditional lifestyles, and witness their daily 
+                            routines as they bring in fresh catches from the sea.</p>
+                    
+                    <h4>Explore Historic Sites
+                    </h4>
+                        <p>Combine beach relaxation with cultural exploration by visiting nearby historic sites. Fort 
+                            Kochi, with its colonial architecture and vibrant art scene, is a short drive from many 
+                            beaches and offers a glimpse into Kerala's rich history.</p>
+                    
+                <h3>Culinary Delights</h3>
+                    <h4>Seafood Specialties</h4>
+                        <p>Kerala's coastal cuisine is a delight for seafood lovers. Enjoy fresh catches cooked to 
+                            perfection at beachside shacks and restaurants. Don’t miss out on trying dishes like fish 
+                            curry, prawn fry, and the famous Kerala-style seafood biryani.</p>
+                            <img src="seafood.jpg" alt="seafood" width="100%"
+                    <h4>Local Flavors</h4>
+                        <p>Indulge in traditional Kerala dishes such as appam with stew, puttu, and banana chips while 
+                            enjoying the stunning beach views. Many local eateries offer authentic flavors that reflect 
+                            the region's uniqueculinary heritage.</p>
+                <h3>Conclusion</h3>
+                        <p>Kerala’s beaches are a perfect blend of natural beauty, cultural richness, and tranquility. 
+                            Whether you’re looking to relax on golden sands, indulge in Ayurvedic treatments, or explore 
+                            vibrant local culture, Kerala's coastline offers an unforgettable experience. So, pack your 
+                            bags and get ready to soak in the sun, sea, and serenity of Kerala's enchanting beaches!</p>
+            </blockquote>
+        </article>
+        <section id="comments-section">
+            <h3>Comments</h3>
+            <form id="commentForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="commentsList"></div>
+        </section>
+    </main>
+    <!--<footer>
+        <p>&copy; 2024 My Blog</p>
+    </footer>-->
+    <script src="script.js"></script>
+
+</body>
+</html>
