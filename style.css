@@ -171,8 +171,8 @@ footer {
     text-align: center;
     background: #333;
     color: #fff;
-    padding: 1em 0;
-    position: fixed;
+    padding:  0;
+    
     bottom: 0;
     width: 100%;
 }
